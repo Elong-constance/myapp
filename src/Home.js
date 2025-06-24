@@ -10,6 +10,11 @@ const Home = () => {
     {title: "Tom Raider", body: "Action & Adventure Movie", actor: "Lara Croft", id:3},
 
   ])
+
+   const handleDelete = (id)=>{
+    const newMovie = movies.filter(movie=>movie.id !== id)
+    Setmovies(newMovie)
+  }
   return (
     <div className='home'>
         <MovieList Movies = {movies} title = "Movies Blog!!!"/> 
@@ -18,7 +23,7 @@ const Home = () => {
         if(Movies.actor =="Arnord"){
           return true
         }
-      })} title = "Arnold's Movies"/>
+      })} title = "Arnold's Movies"handleDelete={handleDelete}/>
       </div>
   )
 }

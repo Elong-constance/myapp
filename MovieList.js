@@ -8,12 +8,13 @@ const MovieList = ({movies, title}) => {
             <div className="blog-preview" key={movie.id}>
                 <h2>{movie.title}</h2>
                 <p>Acted By:{movie.actor}</p>
-                </div>
+                <button onClick={()=>handleDelete(movie.id)}>Delete movie</button>
+            </div>
 
         ))}
-     </div>
+    </div>
 
   )
-}
+  }
 
 export default MovieList
