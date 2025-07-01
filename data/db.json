@@ -1,0 +1,7 @@
+{
+ "movies": [
+ {"title": "commando", "body": "Action & Adventure Movie", "actor": "Arnorld", "id": 1 },
+ {"title": "predator", "body": "Action & Adventure Movie & Herror", "actor": "Arnold", "id":2 },
+ {"title": "Tom Raider", "body": "Action & Adventure Movie", "actor":"Lara craft", "id": 3 }
+ ]
+}
